@@ -69,27 +69,33 @@
                             </ul>
                         </LoggedInTemplate>
                     </asp:LoginView>
-                    <asp:Menu ID="navMenu" runat="server">
-                        BackColor="#222222" BorderColor="Red"
-                        StaticMenuItemStyle-ForeColor="#999999"
-                        staticmenuitemstyle-font-Siz="Large"
-                        staticmenuitemstyle-verticalpadding = "14px"
-                        StaticMenuItemStyle-HorizontalPadding = "10px"
-                        RederingMode="List" Orientation="Horizontal"
-                        DynamicMenuItemStyle-ForeColor="#999999"
-                        DynamicMenuItemStyle-Font-Size="Larger"
-                        DynamicMenuStyle BackColor ="Black"
-                    <Items>
-                        <asp:MenuItem Text="Home" NavigateUrl="~/"></asp:MenuItem>
+                    <asp:Menu ID="navMenu" runat="server"
+                         BackColor="#222222" BorderColor="Red"
+                         StaticMenuItemStyle-ForeColor="#999999"
+                         StaticMenuItemStyle-Font-Size="Larger"
+                         StaticMenuItemStyle-VerticalPadding="14px"
+                         StaticMenuItemStyle-HorizontalPadding="10px"
+                         RenderingMode="List" Orientation="Horizontal"
+                         DynamicMenuItemStyle-ForeColor="#999999"
+                         DynamicMenuItemStyle-Font-Size="Larger"
+                         DynamicMenuStyle-BackColor="Black">
+                        <Items>
+                            <asp:MenuItem Text="Home" NavigateUrl="~/"></asp:MenuItem>
 
-                        <asp:MenuItem Text="ODS">
-                        </asp:MenuItem Text="ODS Query" NavigateUrl="~/SamplePages/ODSQuery.aspx">
+                            <asp:MenuItem Text="ODS">
+                                <asp:MenuItem Text="ODS Query Gridview" NavigateUrl="~/SamplePages/ODSQuery.aspx">
+                                </asp:MenuItem>
+                                 <asp:MenuItem Text="ODS Query ListView" NavigateUrl="~/SamplePages/QueryListView.aspx">
+                                </asp:MenuItem>
+                                 <asp:MenuItem Text="ODS CRUD" NavigateUrl="~/SamplePages/ODSCRUD.aspx">
+                                </asp:MenuItem>
+                                  <asp:MenuItem Text="ListView Data Access" NavigateUrl="~/SamplePages/AlbumDetails.aspx">
+                                </asp:MenuItem>
                             </asp:MenuItem>
-                        </asp:MenuItem>
 
-                        <asp:MenuItem Text="Home" NavigateUrl="~/"></asp:MenuItem>
-                        <asp:MenuItem Text="Home" NavigateUrl="~/"></asp:MenuItem>
-                     </Items>
+                            <asp:MenuItem Text="Contact" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="About" NavigateUrl="~/About.aspx"></asp:MenuItem>
+                        </Items>
                     </asp:Menu>
                 </div>
             </div>

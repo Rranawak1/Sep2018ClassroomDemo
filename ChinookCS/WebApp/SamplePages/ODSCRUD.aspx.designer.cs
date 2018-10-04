@@ -10,34 +10,16 @@
 namespace WebApp.SamplePages {
     
     
-    public partial class ODSQuery {
+    public partial class ODSCRUD {
         
         /// <summary>
-        /// Label1 control.
+        /// MessageUserControl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// ArtistList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ArtistList;
-        
-        /// <summary>
-        /// FetchArtist control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton FetchArtist;
+        protected global::DMIT2018Common.UserControls.MessageUserControl MessageUserControl;
         
         /// <summary>
         /// AlbumList control.
@@ -46,7 +28,7 @@ namespace WebApp.SamplePages {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView AlbumList;
+        protected global::System.Web.UI.WebControls.ListView AlbumList;
         
         /// <summary>
         /// ArtistListODS control.
